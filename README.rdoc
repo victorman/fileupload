@@ -1,3 +1,9 @@
 == README
 
 First successful attempt at uploading a file, deleting, and accessing file through link.
+
+
+TODO:
+* add ability to modify the file if it's an image, textfile, etc...
+* add javascript to play if it's media?
+* add thumbnails if image?

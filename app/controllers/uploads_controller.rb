@@ -24,17 +24,19 @@ class UploadsController < ApplicationController
   # POST /uploads
   # POST /uploads.json
   def create
-    #byebug  
-    p = upload_params
     @upload = Upload.new
-    data = p[:datafile]
+    
+    data = upload_params[:datafile]
+    full_filename = Rails.root.join('public', 'uploads', data.original_filename)
+    
     @upload.name = data.original_filename
     @upload.content_type = data.content_type
-    full_filename = Rails.root.join('public', 'uploads', data.original_filename)
+    
     #save the file
     File.open(full_filename, 'wb') do |f|
       f.write(data.read)
     end
+    
     #add size
     @upload.size = File.stat(full_filename).size
     
