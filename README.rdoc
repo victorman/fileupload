@@ -4,6 +4,7 @@ First successful attempt at uploading a file, deleting, and accessing file throu
 
 
 TODO:
-* add ability to modify the file if it's an image, textfile, etc...
-* add javascript to play if it's media?
-* add thumbnails if image?
+* add ability to modify the file if it's an image, textfile, etc.
+* add javascript to play if it's media
+* add thumbnails of image
+* add users, individual users file lists, and users file directories.
